@@ -1,0 +1,492 @@
+:root {
+  --1: #fcfbfe;
+  --2: #5643FD;
+  --3: #0C164F;
+  --4: #1d1135;
+  --5: #7659fe;
+  --6: #ba1e68;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  display: grid;
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  background: var(--1);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header{
+  width: 100%;
+  height: fit-content;
+  background: var(--1);
+  border-bottom: 5px solid var(--6);
+  
+}
+  .upper-welcome{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+  }
+
+  .upper-welcome img{
+      margin-top: 2px;
+      margin-bottom: 2px;
+      height: 96px;
+      width: auto;
+  }
+  .upper-welcome #menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+  }
+  .upper-welcome #menu img{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 50px;
+    width: auto;
+}
+  .upper-welcome #pick {
+      font-family: 'Inter';
+      white-space: nowrap;
+      padding: 0px 20px 0px 20px;
+      font-size: 30px;
+      color: var(--6);
+      justify-items: center;
+  }
+      .upper-welcome #pick:hover{
+          font-size: 33px;
+          transition: 0.4s;
+      }
+.welcome{
+  position: relative;
+  width: 100%;
+  background: var(--1);
+  border-bottom: 5px solid var(--2);
+}
+  .welcome .welcomeimg {
+    position: absolute;
+    width: 100%;
+    height: 596px;
+    left: 0px;
+    top: 0px;
+    background-image:url("Design/pictures/180116-deep-space-gateway-boeing.jpg");
+    filter: blur(1.5px);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .welcome .welcomeblank {
+    position: relative;
+    height: 596px;
+    top: 0px;
+    left: 0px;
+    background: rgba(58, 58, 58, 0.597);
+    background-size:cover;
+  }
+  .welcome .framebox{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 596px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+    .welcome .framebox h1,h2{
+      font-family: 'Inter';
+      font-weight: bold;
+      
+    }
+    .welcome .framebox h1{
+      line-height: 85px;
+      text-align: center;
+      font-size: 85px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0px;
+      color: var(--1);
+      padding-bottom: 45px;
+    }
+    .welcome .framebox h2{
+      font-weight: 500;
+      font-size: 35px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0px;
+      color: var(--1);
+    }
+    .welcome .framebox .welcome-buttons{
+      margin-top: 30px;
+      display: flex;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 60%;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-wrap: nowrap;
+    }
+    .welcome .framebox #buttonswcl{
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--1);
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 12px 30px;
+      border-radius: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: var(--6);
+    }
+.body-paragraph {
+  margin-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5px;
+  text-align: justify;
+  text-align: center;
+  align-content: center;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+  .body-paragraph h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--2);
+    letter-spacing: 10px;
+  }
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+
+}
+  .container #box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 280px;
+    padding: 10px;
+    border: 7.5px var(--2) solid;
+    border-radius: 26px;
+    text-align: justify;
+    background-color: var(--1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    filter: drop-shadow(5px 4px 4px var(--2));
+  }
+  .container #box:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px var(--6));
+    border: 7.5px var(--6) solid;
+    transition: .5s;
+  }
+  .container #box:hover >a div#buttonswcl {
+    background-color: var(--6);
+    }
+    #box img{
+      min-height: 40%;
+      width: auto;
+      padding: 10px;
+    }
+    #box #name{
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: 27px;
+      font-weight: 700;
+    }
+    #box #price{
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 15% 20px 10px 20px;
+    }
+    #box #availabe{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10% 20px 10% 20px;
+    }
+    #box #dummy{
+      height: 20%;
+    }
+    .container #box #buttonswcl{
+      display: flex;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--1);
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 12px 30px;
+      border-radius: 18px;
+      text-transform: uppercase;
+      background-color: var(--5);
+      border: 2px var(--3) solid;
+      margin-top: auto;
+      align-items: center;
+      justify-content: center;
+    }
+.container_g{
+  font-size: 25px;
+  display: grid;
+  height: 100vmin;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: 
+  "a a"
+  "b c";
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  align-content: space-evenly;
+}
+.container_g div #text{
+  width: 50%;
+}
+#picture_g{
+  height: 180px;
+  width: auto;
+  margin-bottom: 45px;
+}
+.container_g .navigate_back{
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  text-align: left;
+  grid-area: a;
+  margin-left: 35px;
+}
+.container_g .picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: b;
+}
+.container_g .picture #name{
+  font-size: 35px;
+  font-weight: 800;
+}
+.container_g .description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: c;
+}
+.description #text{
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+.description #price{
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.container_g #buttonswcl{
+  display: flex;
+  width: 40%;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--1);
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 12px 30px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  background-color: var(--5);
+  border: 2px var(--3) solid;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+}
+.friends{
+  display: flex;
+  position: relative;
+  background: var(--1);
+  border-bottom: 7px solid var(--6);
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./Design/pictures/Coming-Soon-Banner-Compressed-5.1M-211k.jpg);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: 0% 40%;
+  border-top: 7px solid var(--5);
+  max-width: 100%;
+  overflow: hidden;
+}
+  .friends .title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--1);
+    filter: drop-shadow(5px 5px 2px black);
+  }
+  .friends .blur{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(3px) saturate(80%) brightness(120%) grayscale(50%);
+  }
+  .friends .logo-grid{
+    width: 100%;
+    max-width: 1920px;
+    filter: brightness(1.35);
+    display: grid;
+    grid-template:  "s w e"
+                    "r t y"
+                    "p i o"
+                    "u a q";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+    .q{
+      grid-area: q;
+    }
+    .w{
+      grid-area: w;
+    }
+    .e{
+      grid-area: e;
+    }
+    .r{
+      grid-area: r;
+    }
+    .t{
+      grid-area: t;
+    }
+    .y{
+      grid-area: y;
+    }
+    .u{
+      grid-area: u;
+    }
+    .i{
+      grid-area: i;
+    }
+    .o{
+      grid-area: o;
+    }
+    .p{
+      grid-area: p;
+    }
+    .a{
+      grid-area: a;
+    }
+    .s{
+      transform: scale(1.3);
+      grid-area: s;
+    }
+    .d{
+      grid-area: d;
+    }
+    .friends .logo-grid img{
+      width: 175px;
+      height: auto;
+      
+    }
+    .friends .logo-grid div:not(.t){
+      filter: drop-shadow(2px 2px 2px black);
+    }
+    .friends .logo-grid > #exc{
+      filter: drop-shadow(3px 4px 4px rgb(111, 111, 111));
+    }
+.bottom{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.bottom-links{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+.about{
+  width: 33.33333333%;
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h5{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: var(--3);
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.footer-link{
+  display: block;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d5d5e0;
+  color: var(--6);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.about .icos{
+  display: flex;
+  flex-direction: row;
+}
+.about .icos img{
+  height: 50px;
+  padding: 5px 10px 5px 0px
+}
+.about p{
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.about p a{
+  color: #ba1e68;
+}
+.about div a{
+  color: var(--5);
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.about #buttonswcl{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--1);
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--6);
+}
