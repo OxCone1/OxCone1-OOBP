@@ -55,10 +55,7 @@ function generateItemList() {
           generateItemDescriptionPage(index)
         }
         buttonHolder.onclick = function() {
-          var name = $(this).data('name');
-          var price = Number($(this).data('price'));
-          shoppingCart.addItemToCart(name, price, 1);
-          displayCart();
+          addItemsToArray(index, json)
         }
       });
       document.querySelectorAll("#navigation").forEach((element, index) => {
@@ -122,10 +119,11 @@ function generateItemList() {
 
           let buttonswcl = document.createElement("div")
           buttonswcl.id = "buttonswcl"
-          buttonswcl.setAttribute("data-price",json[index].value)
-          buttonswcl.setAttribute("data-name",json[index].itemNameVisible)
           buttonswcl.innerText = "Add to cart"
           description.appendChild(buttonswcl)
+          buttonswcl.onclick = function () {
+            addItemsToArray(index, json)
+          }
       })
   }
 
