@@ -126,12 +126,3 @@ function generateItemList() {
           }
       })
   }
-
-  // buttonHolder.setAttribute("data-price",json[index].value)
-  // buttonHolder.setAttribute("data-name",json[index].itemNameVisible)
-  // buttonswcl.onclick = function() {
-  //   var name = $(this).data('name');
-  //   var price = Number($(this).data('price'));
-  //   shoppingCart.addItemToCart(name, price, 1);
-  //   displayCart();
-  // }
