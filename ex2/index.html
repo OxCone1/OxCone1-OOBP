@@ -38,14 +38,19 @@
                   </div>
                 </a>
               </div>
-              <div>
-                <a href="">
-                  <div><img src="./Design/pictures/icons/shopcart.png" alt=""><div id="cartcount"></div></div>
-                </a>
+              <div id="cartclick">
+                <div><img src="./Design/pictures/icons/shopcart.png" alt=""><div id="cartcount"></div>
+                </div>
               </div>
             </div>
           </div>
       </div>
+      <script>
+        var el = document.getElementById("cartclick")
+        el.onclick = function () {
+          displayCart()
+        }
+      </script>
       <div class="welcome">
         <div class="welcomeimg"></div>
         <div class="welcomeblank"></div>
@@ -63,6 +68,15 @@
       <h1>ONLINE SHOP</h1>
     </div>
     <div class="target">
+      <table id="itemTable">
+        <tr>
+          <th>Item Name</th>
+          <th>QTY</th>
+          <th>Price</th>
+          <th>Total price</th>
+        </tr>
+        <tr id="tabletarget"></tr>
+      </table>
     </div>
     <!-- <div class="friends">
       <div class="blur">
