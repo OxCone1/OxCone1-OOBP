@@ -54,6 +54,14 @@ a {
       justify-content: center;
       align-content: center;
   }
+  .upper-welcome #menu div:nth-child(3) a div{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+  }
+  .upper-welcome #menu div:nth-child(3) a div div{
+    margin-left: 20px;
+  }
   .upper-welcome #menu img{
     margin-top: 2px;
     margin-bottom: 2px;
